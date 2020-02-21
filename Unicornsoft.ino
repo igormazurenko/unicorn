@@ -16,6 +16,13 @@
    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+
+  /*
+
+PIN MAP Wemos Mini > ESP 12F
+ SDA = D2 (GPIO4)
+*/
+
 //#define FASTLED_ALLOW_INTERRUPTS 1
 //#define INTERRUPT_THRESHOLD 1
 #define FASTLED_INTERRUPT_RETRY_COUNT 0
@@ -57,10 +64,10 @@ ESP8266HTTPUpdateServer httpUpdateServer;
 #define COLOR_ORDER   GRB
 #define NUM_LEDS      8
 
-#define MILLI_AMPS         800 // IMPORTANT: set the max milli-Amps of your power supply (4A = 4000mA)
+#define MILLI_AMPS         600 // IMPORTANT: set the max milli-Amps of your power supply (4A = 4000mA)
 #define FRAMES_PER_SECOND  120  // here you can control the speed. With the Access Point / Web Server the animations run a bit slower.
 
-const bool apMode = true;
+const bool apMode = true; //set to 'false' if you want to use it only in known wifi network
 
 #include "Secrets.h" // this file is intentionally not included in the sketch, so nobody accidentally commits their secret information.
 // create a Secrets.h file with the following:
