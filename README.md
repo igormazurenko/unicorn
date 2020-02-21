@@ -1,4 +1,3 @@
-FastLED + ESP8266 Web Server
 =========
 
 Control an addressable LED strip with an ESP8266 via a web browser or infrared remote control.
@@ -99,3 +98,4 @@ Control via infrared remote control is also supported, via the [ESP8266 port of 
 
 [Adafruit NeoPixel Ring]:https://www.adafruit.com/product/1586
 [Adafruit HUZZAH ESP8266 Breakout]:https://www.adafruit.com/products/2471
+
